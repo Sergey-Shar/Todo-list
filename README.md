@@ -1,7 +1,7 @@
-# Simple-todo-list
-## First job in native JavaScript". 
+## Simple-todo-list
+### First job in native JavaScript". 
 
-## Task :bulb:
+### Task :bulb:
 
 * Layout on JavaScript
 * Mobile first
@@ -10,12 +10,12 @@
 * Use destructorization
 
 
-## Tools :hammer:
+### Tools :hammer:
 
 * HTML5
 * Javascript
 * Library Tailwind CSS
 
-## Ready-made solution:
+### Ready-made solution:
 
 https://sergey-shar.github.io/todo-list/
