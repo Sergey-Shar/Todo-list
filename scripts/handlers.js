@@ -22,12 +22,18 @@ function onSortTodos() {
     render(completedTodos)
 }
 
-function onSearch() {
-    const input = document.getElementById("search")
-    const checkText = getData().filter(todo => todo.text === input.value)
-    render(checkText)
+function onSearch(event) {
+    if (event.code === "Enter") {
+        const input = document.getElementById("search")
+        const checkText = getData().filter(todo => todo.text === input.value)
+        render(checkText)
+    } else if (event.code === "Escape") {
+        const data = getData()
+        render(data)
+        const input = document.getElementById("search")
+        input.value = ""
+    }
 }
-
 function onBtnAddCard() {
     const input = document.querySelector("textarea")
     const date = new Date().toLocaleDateString();
