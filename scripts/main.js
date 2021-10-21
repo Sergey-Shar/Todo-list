@@ -8,13 +8,13 @@ import {onBtnDeleteAll,onBtnDeleteLast,onSortTodos,onSearch,onBtnAddCard} from "
 // App
 
 document.addEventListener("DOMContentLoaded", app);
+document.addEventListener("keydown",onSearch);
 
 function app() {
   const root = document.getElementById("root");
   root.className = " h-screen overflow-scroll bg-cover  pt-28  md:pt-48 md:bg-auto  ";
   const header = createHeader();
   header.addEventListener("click", onHeader);
-  header.addEventListener("input", onHeader)
   const main = createMain();
   const container = createContainer();
   container.append(header, main);
@@ -37,9 +37,7 @@ function onHeader(event) {
     onBtnDeleteLast()
   } else if (target.id === "btn-sort") {
     onSortTodos()
-  } else if (target.id === "search") {
-    onSearch()
-  }
+  } 
 }
 
 function onCardHandlers(event) {
