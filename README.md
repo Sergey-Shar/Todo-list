@@ -20,4 +20,4 @@
 
 https://sergey-shar.github.io/todo-list/
 
-![alt text](src/vidio/the-akashi-kaikyo-bridge-5542079_640.jpg)
+![alt text](pictures/family-life-household-do.jpeg)
