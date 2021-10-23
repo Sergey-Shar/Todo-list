@@ -22,4 +22,6 @@ In this project, I used a functional approach and divided it into modules.  To s
 
 https://sergey-shar.github.io/todo-list/
 
-![alt text](pictures/family-life-household-do.jpeg)
+### Preview:
+
+![alt text](pictures/photo_2021-10-23_09-46-53.jpg)
