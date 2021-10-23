@@ -1,5 +1,4 @@
-## Simple-todo-list
-### First job in native JavaScript". 
+## Simple-todo-list 
 
 ### Task :bulb:
 
