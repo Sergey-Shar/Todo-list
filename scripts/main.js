@@ -3,7 +3,7 @@
 import {createContainer,createHeader,createMain,createCard} from "./templates.js";
 import {setData,getData} from "./storageApi.js";
 import {counterTodo,counterCompleted} from "./counter.js";
-import {onBtnDeleteAll,onBtnDeleteLast,onSortTodos,onSearch,onBtnAddCard} from "./handlers.js";
+import {onBtnDeleteAll,onBtnDeleteLast,onSortTodos,onSearch,onBtnAddCard,onSearchClick,onSearchReset} from "./handlers.js";
 
 // App
 
