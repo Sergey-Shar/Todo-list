@@ -70,7 +70,7 @@ function createUpperRow() {
 function createLowerRow(all, completed = 0) {
   const lowerRow = createElement(
     "div",
-    " flex-wrap-reverse md: flex justify-around my-5 md:my-10 "
+    "flex-wrap-reverse md: flex justify-around my-5 md:my-10 "
   );
   const allTodos = createElement(
     "p",
@@ -90,16 +90,25 @@ function createLowerRow(all, completed = 0) {
     "Sort completed"
   );
   buttonSort.id = "btn-sort"
+  const searchContainer = createElement(
+    "div","searchContainer  relative w-96"
+  )
   const inputSearch = createElement(
     "input",
-    " w-full md:w-1/2 border-2 border-white rounded-lg shadow-lg px-2  focus:outline-none  shadow-lg mb-2 "
+    " pl-10 cursor-pointer w-full md:w-1/2 border-2 border-white rounded-lg shadow-lg px-2  focus:outline-none  shadow-lg mb-2 "
   );
+  const searchBtn = createElement(
+    "button",
+    " search-btn "
+  );
+  searchBtn.id = "btn-search"
   inputSearch.setAttribute("placeholder", "Search...");
+  searchBtn.setAttribute("type","search")
   inputSearch.id = "search"
-  lowerRow.append(allTodos, completedTodos, buttonSort, inputSearch);
+  searchContainer.append(inputSearch,searchBtn)
+  lowerRow.append(allTodos, completedTodos, buttonSort, searchContainer);
   return lowerRow;
 }
-
 // Creates block main 
 
 function createMain() {
