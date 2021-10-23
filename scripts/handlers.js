@@ -34,6 +34,28 @@ function onSearch(event) {
         input.value = ""
     }
 }
+
+function onSearchClick(){
+    const input = document.getElementById("search")
+    const btn = document.getElementById("btn-search")
+    const checkText = getData().filter(todo => todo.text === input.value)
+    render(checkText)
+    input.value = ""
+    btn.className = 'search-btn fas fa-times'
+    btn.id = "search-reset"
+    input.placeholder = "cancel"
+}
+
+function onSearchReset() {
+    const btn = document.getElementById("search-reset")
+    const input = document.getElementById("search")
+    const data = getData()
+    render(data)
+    btn.className = 'search-btn'
+    btn.id = "btn-search"
+    input.placeholder = "search"
+}
+
 function onBtnAddCard() {
     const input = document.querySelector("textarea")
     const date = new Date().toLocaleDateString();
@@ -45,4 +67,4 @@ function onBtnAddCard() {
     input.value = "";
   }
 
-export {onBtnDeleteAll,onSortTodos, onSearch, onBtnDeleteLast, onBtnAddCard}
+export {onBtnDeleteAll,onSortTodos, onSearch, onBtnDeleteLast, onBtnAddCard,onSearchClick,onSearchReset}
