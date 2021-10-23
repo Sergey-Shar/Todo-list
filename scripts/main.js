@@ -37,7 +37,11 @@ function onHeader(event) {
     onBtnDeleteLast()
   } else if (target.id === "btn-sort") {
     onSortTodos()
-  } 
+  }  else if (target.id === "btn-search"){
+    onSearchClick()
+  } else if (target.id === "search-reset"){
+    onSearchReset()
+  }
 }
 
 function onCardHandlers(event) {
