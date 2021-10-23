@@ -1,0 +1,18 @@
+
+.search-btn{
+    border: none;
+    outline: none;
+    background: transparent;
+    position: absolute;
+    left: 10px;
+    bottom:10px;
+    cursor: pointer;
+   
+}
+
+.search-btn::before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 20px;
+    color:rgba(156, 163, 175, var(--tw-bg-opacity));
+}
