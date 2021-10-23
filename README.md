@@ -1,5 +1,7 @@
 ## Simple-todo-list 
 
+### About the project:
+
 ### Task :bulb:
 
 * Layout on JavaScript
